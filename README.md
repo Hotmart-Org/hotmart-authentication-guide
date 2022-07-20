@@ -20,9 +20,12 @@ npm install
 
 ## Setup
 
-- Crie um arquivo .env seguindo o exemplo .env-sample
+- Crie um arquivo `.env` seguindo o exemplo `.env-sample`
 - Se necessário, altere o `API_HOST` e `API_PORT`
 - Com o serviço de autenticação criado, acesse https://app-vlc.hotmart.com/tools/credentials e use as chaves do serviços para preencher as variáveis com prefixo `CLIENT_`
+
+<img src="https://user-images.githubusercontent.com/96084861/180067065-6f2d853d-2e97-42e8-a423-f6e2eb1d8305.png" alt="Credential SSO Card" />
+
 
 ## Execução
 
