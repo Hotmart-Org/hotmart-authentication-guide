@@ -1,0 +1,10 @@
+site_name: hotmart-authentication-guide
+repo_url: https://github.com/Hotmart-Org/hotmart-authentication-guide
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Summary: 'index.md'
+  - ADR: 'architecture/decisions/index.md'
+  - Quick Guide: '../README.md'

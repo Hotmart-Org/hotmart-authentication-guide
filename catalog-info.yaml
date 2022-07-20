@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hotmart-authentication-guide
+  description: Guia de implementação de uma aplicação back-end com o sistema de SSO Hotmart Authentication
+  tags: []
+  annotations:
+    github.com/project-slug: Hotmart-Org/hotmart-authentication-guide
+spec:
+  type: service
+  lifecycle: experimental
+  owner: integrations_team
+  system: hot_integration
+  heimdall:
+    reportable: false
+    pci: false
+    squads:
+    - Core API
+    impact: 
