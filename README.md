@@ -8,7 +8,7 @@ Guia de implementação de uma aplicação back-end, em Node, com o sistema de S
 
 ## Pré-requisitos
 
-Para implementar o Hotmart Authentication você precisa solicitar a criação de um serviço de autenticação [preenchendo este formulário](https://docs.google.com/document/d/19wQyIHhNPbjWyutHgtvDTtSbsGxyQPKOuWRZVzE3XM0/edit#heading=h.urt713xjbyw).
+Para implementar o Hotmart Authentication você precisa solicitar a criação de um serviço de autenticação [preenchendo este formulário](https://hotmart1.typeform.com/to/MousjmZA).
 
 ## Instalação
 
@@ -22,10 +22,9 @@ npm install
 
 - Crie um arquivo `.env` seguindo o exemplo `.env-sample`
 - Se necessário, altere o `API_HOST` e `API_PORT`
-- Com o serviço de autenticação criado, acesse https://app-vlc.hotmart.com/tools/credentials e use as chaves do serviços para preencher as variáveis com prefixo `CLIENT_`
+- Com o serviço de autenticação criado, acesse suas [credenciais na plataforma Hotmart](https://app-vlc.hotmart.com/tools/credentials) e use as chaves do serviços para preencher as variáveis com prefixo `CLIENT_`
 
 <img src="https://user-images.githubusercontent.com/96084861/180067065-6f2d853d-2e97-42e8-a423-f6e2eb1d8305.png" alt="Credential SSO Card" />
-
 
 ## Execução
 
@@ -63,11 +62,9 @@ Pra mais detalhes das APIs do fluxo de integração, acesse: [Hotmart Developers
 
 Neste guia de implementação usamos o botão [Entrar com a Hotmart](https://www.npmjs.com/package/@hotmart/hot-login) na rota `/login` para redirecionar o usuário para a área de autenticação da Hotmart.
 
-Este componente está disponível no pacote NPM [@hotmart/hot-login](https://www.npmjs.com/package/@hotmart/hot-login). Para instala-lo basta executar o seguinte comando:
+Este componente está disponível no pacote NPM [@hotmart/hot-login](https://www.npmjs.com/package/@hotmart/hot-login).
 
-```
-npm i @hotmart/hot-login
-```
+[![https://nodei.co/npm/@hotmart%2Fhot-login.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/@hotmart%2Fhot-login.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/@hotmart%2Fhot-login)
 
 ## To-do
 
