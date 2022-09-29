@@ -9,7 +9,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: integrations_team
+  owner: pending_squad
   system: hot_integration
   heimdall:
     reportable: false
@@ -17,3 +17,4 @@ spec:
     squads:
     - Core API
     impact: 
+
