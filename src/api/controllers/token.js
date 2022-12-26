@@ -12,17 +12,18 @@ class TokenController {
   }
 
   async getTokens(code) {
-    const { SSO_HOST, SSO_ACCESS_TOKEN_PATH, CLIENT_ID, CLIENT_SECRET, STATE_COOKIE, CODE_VERIFIER } = process.env
+    const { SSO_HOST, SSO_ACCESS_TOKEN_PATH, STATE_COOKIE, CODE_VERIFIER } = process.env
     const url = `${SSO_HOST}${SSO_ACCESS_TOKEN_PATH}`
+    const clientBasicToken = HashHelpers.getClientBasicToken()
     const redirectUri = this.getRedirectUrl()
+
     const headers = {
+      Authorization: `Basic ${clientBasicToken}`,
       'content-type': 'application/x-www-form-urlencoded',
     }
 
     const data = qs.stringify({
       grant_type: 'authorization_code',
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
       redirect_uri: redirectUri,
       state: STATE_COOKIE,
       code_verifier: CODE_VERIFIER,
