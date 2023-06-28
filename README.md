@@ -8,6 +8,8 @@ Guia de implementação de uma aplicação back-end, em Node, com o sistema de S
 
 ## Pré-requisitos
 
+Este projeto está em fase **`BETA`**, e no momento não está disponível para o público em geral, apenas para ISV's (Fornecedores de softwares independentes).
+
 Para implementar o Hotmart Authentication você precisa solicitar a criação de um serviço de autenticação [preenchendo este formulário](https://hotmart1.typeform.com/to/MousjmZA).
 
 ## Instalação
